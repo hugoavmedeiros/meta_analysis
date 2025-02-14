@@ -1,0 +1,15 @@
+NOME;PoP;API;Pacote_R
+arXiv;Não;Não precisa;aRxiv
+Google Scholar;Sim;Não disponível;Não existe
+Google Scholar Profiles;Sim;Não disponível;Não existe
+PubMed;Não;Obrigatória;easyPubMed
+PubMed Central (PMC);Não;Desejável;rentrez
+Scopus;Sim;Obrigatória;rscopus
+Web of Science (WoS);Sim;Obrigatória;Não existe
+CrossRef;Sim;Desejável;rcrossref
+Semantic Scholar;Não;Desejável;Não existe
+IEEE Xplore;Não;Obrigatória;Não existe
+SciELO;Não;Não disponível;Não existe
+Springer;Não;Obrigatória;Não existe
+DOAJ (Open Access);Não;Desejável;rdoaj
+InspireHEP (Física/Mat.);Não;Desejável;Não existe

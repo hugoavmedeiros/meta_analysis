@@ -1,0 +1,390 @@
+"";"id";"submitted";"updated";"title";"abstract";"authors";"affiliations";"link_abstract";"link_pdf";"link_doi";"comment";"journal_ref";"doi";"primary_category";"categories";"title_clean";"abstract_clean";"found_in_title";"found_in_abstract";"citations_semantic";"citations_crossref"
+"1";"1611.05788v1";"2016-09-30 03:49:16";"2016-09-30 03:49:16";"Data Science in Service of Performing Arts: Applying Machine Learning to
+  Predicting Audience Preferences";"  Performing arts organizations aim to enrich their communities through the
+arts. To do this, they strive to match their performance offerings to the taste
+of those communities. Success relies on understanding audience preference and
+predicting their behavior. Similar to most e-commerce or digital entertainment
+firms, arts presenters need to recommend the right performance to the right
+customer at the right time. As part of the Michigan Data Science Team (MDST),
+we partnered with the University Musical Society (UMS), a non-profit performing
+arts presenter housed in the University of Michigan, Ann Arbor. We are
+providing UMS with analysis and business intelligence, utilizing historical
+individual-level sales data. We built a recommendation system based on
+collaborative filtering, gaining insights into the artistic preferences of
+customers, along with the similarities between performances. To better
+understand audience behavior, we used statistical methods from customer-base
+analysis. We characterized customer heterogeneity via segmentation, and we
+modeled customer cohorts to understand and predict ticket purchasing patterns.
+Finally, we combined statistical modeling with natural language processing
+(NLP) to explore the impact of wording in program descriptions. These ongoing
+efforts provide a platform to launch targeted marketing campaigns, helping UMS
+carry out its mission by allocating its resources more efficiently. Celebrating
+its 138th season, UMS is a 2014 recipient of the National Medal of Arts, and it
+continues to enrich communities by connecting world-renowned artists with
+diverse audiences, especially students in their formative years. We aim to
+contribute to that mission through data science and customer analytics.
+";"Jacob Abernethy|Cyrus Anderson|Alex Chojnacki|Chengyu Dai|John Dryden|Eric Schwartz|Wenbo Shen|Jonathan Stroud|Laura Wendlandt|Sheng Yang|Daniel Zhang";"University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan";"http://arxiv.org/abs/1611.05788v1";"http://arxiv.org/pdf/1611.05788v1";"";"Presented at the Data For Good Exchange 2016";"";"";"stat.AP";"stat.AP|cs.DB|cs.LG";"data science in service of performing arts: applying machine learning to predicting audience preferences";"performing arts organizations aim to enrich their communities through the arts. to do this, they strive to match their performance offerings to the taste of those communities. success relies on understanding audience preference and predicting their behavior. similar to most e-commerce or digital entertainment firms, arts presenters need to recommend the right performance to the right customer at the right time. as part of the michigan data science team (mdst), we partnered with the university musical society (ums), a non-profit performing arts presenter housed in the university of michigan, ann arbor. we are providing ums with analysis and business intelligence, utilizing historical individual-level sales data. we built a recommendation system based on collaborative filtering, gaining insights into the artistic preferences of customers, along with the similarities between performances. to better understand audience behavior, we used statistical methods from customer-base analysis. we characterized customer heterogeneity via segmentation, and we modeled customer cohorts to understand and predict ticket purchasing patterns. finally, we combined statistical modeling with natural language processing (nlp) to explore the impact of wording in program descriptions. these ongoing efforts provide a platform to launch targeted marketing campaigns, helping ums carry out its mission by allocating its resources more efficiently. celebrating its 138th season, ums is a 2014 recipient of the national medal of arts, and it continues to enrich communities by connecting world-renowned artists with diverse audiences, especially students in their formative years. we aim to contribute to that mission through data science and customer analytics.";FALSE;TRUE;NA;NA
+"2";"1703.02475v1";"2017-03-07 17:09:13";"2017-03-07 17:09:13";"OrpheusDB: Bolt-on Versioning for Relational Databases";"  Data science teams often collaboratively analyze datasets, generating dataset
+versions at each stage of iterative exploration and analysis. There is a
+pressing need for a system that can support dataset versioning, enabling such
+teams to efficiently store, track, and query across dataset versions. We
+introduce OrpheusDB, a dataset version control system that ""bolts on""
+versioning capabilities to a traditional relational database system, thereby
+gaining the analytics capabilities of the database ""for free"". We develop and
+evaluate multiple data models for representing versioned data, as well as a
+light-weight partitioning scheme, LyreSplit, to further optimize the models for
+reduced query latencies. With LyreSplit, OrpheusDB is on average 1000x faster
+in finding effective (and better) partitionings than competing approaches,
+while also reducing the latency of version retrieval by up to 20x relative to
+schemes without partitioning. LyreSplit can be applied in an online fashion as
+new versions are added, alongside an intelligent migration scheme that reduces
+migration time by 10x on average.
+";"Silu Huang|Liqi Xu|Jialin Liu|Aaron Elmore|Aditya Parameswaran";"";"http://arxiv.org/abs/1703.02475v1";"http://arxiv.org/pdf/1703.02475v1";"";"";"";"";"cs.DB";"cs.DB";"orpheusdb: bolt-on versioning for relational databases";"data science teams often collaboratively analyze datasets, generating dataset versions at each stage of iterative exploration and analysis. there is a pressing need for a system that can support dataset versioning, enabling such teams to efficiently store, track, and query across dataset versions. we introduce orpheusdb, a dataset version control system that ""bolts on"" versioning capabilities to a traditional relational database system, thereby gaining the analytics capabilities of the database ""for free"". we develop and evaluate multiple data models for representing versioned data, as well as a light-weight partitioning scheme, lyresplit, to further optimize the models for reduced query latencies. with lyresplit, orpheusdb is on average 1000x faster in finding effective (and better) partitionings than competing approaches, while also reducing the latency of version retrieval by up to 20x relative to schemes without partitioning. lyresplit can be applied in an online fashion as new versions are added, alongside an intelligent migration scheme that reduces migration time by 10x on average.";FALSE;TRUE;41;NA
+"3";"1710.06839v1";"2017-10-18 17:44:17";"2017-10-18 17:44:17";"Driving with Data: Modeling and Forecasting Vehicle Fleet Maintenance in
+  Detroit";"  The City of Detroit maintains an active fleet of over 2500 vehicles, spending
+an annual average of over \$5 million on new vehicle purchases and over \$7.7
+million on maintaining this fleet. Understanding the existence of patterns and
+trends in this data could be useful to a variety of stakeholders, particularly
+as Detroit emerges from Chapter 9 bankruptcy, but the patterns in such data are
+often complex and multivariate and the city lacks dedicated resources for
+detailed analysis of this data. This work, a data collaboration between the
+Michigan Data Science Team (http://midas.umich.edu/mdst) and the City of
+Detroit's Operations and Infrastructure Group, seeks to address this unmet need
+by analyzing data from the City of Detroit's entire vehicle fleet from
+2010-2017. We utilize tensor decomposition techniques to discover and visualize
+unique temporal patterns in vehicle maintenance; apply differential sequence
+mining to demonstrate the existence of common and statistically unique
+maintenance sequences by vehicle make and model; and, after showing these
+time-dependencies in the dataset, demonstrate an application of a predictive
+Long Short Term Memory (LSTM) neural network model to predict maintenance
+sequences. Our analysis shows both the complexities of municipal vehicle fleet
+data and useful techniques for mining and modeling such data.
+";"Josh Gardner|Danai Koutra|Jawad Mroueh|Victor Pang|Arya Farahi|Sam Krassenstein|Jared Webb";"University of Michigan|University of Michigan|University of Michigan|University of Michigan|University of Michigan|City of Detroit|City of Detroit";"http://arxiv.org/abs/1710.06839v1";"http://arxiv.org/pdf/1710.06839v1";"";"Presented at the Data For Good Exchange 2017";"";"";"cs.CY";"cs.CY";"driving with data: modeling and forecasting vehicle fleet maintenance in detroit";"the city of detroit maintains an active fleet of over 2500 vehicles, spending an annual average of over \$5 million on new vehicle purchases and over \$7.7 million on maintaining this fleet. understanding the existence of patterns and trends in this data could be useful to a variety of stakeholders, particularly as detroit emerges from chapter 9 bankruptcy, but the patterns in such data are often complex and multivariate and the city lacks dedicated resources for detailed analysis of this data. this work, a data collaboration between the michigan data science team (http://midas.umich.edu/mdst) and the city of detroit's operations and infrastructure group, seeks to address this unmet need by analyzing data from the city of detroit's entire vehicle fleet from 2010-2017. we utilize tensor decomposition techniques to discover and visualize unique temporal patterns in vehicle maintenance; apply differential sequence mining to demonstrate the existence of common and statistically unique maintenance sequences by vehicle make and model; and, after showing these time-dependencies in the dataset, demonstrate an application of a predictive long short term memory (lstm) neural network model to predict maintenance sequences. our analysis shows both the complexities of municipal vehicle fleet data and useful techniques for mining and modeling such data.";FALSE;TRUE;NA;NA
+"4";"1901.02547v1";"2019-01-08 22:56:45";"2019-01-08 22:56:45";"Problem Formulation and Fairness";"  Formulating data science problems is an uncertain and difficult process. It
+requires various forms of discretionary work to translate high-level objectives
+or strategic goals into tractable problems, necessitating, among other things,
+the identification of appropriate target variables and proxies. While these
+choices are rarely self-evident, normative assessments of data science projects
+often take them for granted, even though different translations can raise
+profoundly different ethical concerns. Whether we consider a data science
+project fair often has as much to do with the formulation of the problem as any
+property of the resulting model. Building on six months of ethnographic
+fieldwork with a corporate data science team---and channeling ideas from
+sociology and history of science, critical data studies, and early writing on
+knowledge discovery in databases---we describe the complex set of actors and
+activities involved in problem formulation. Our research demonstrates that the
+specification and operationalization of the problem are always negotiated and
+elastic, and rarely worked out with explicit normative considerations in mind.
+In so doing, we show that careful accounts of everyday data science work can
+help us better understand how and why data science problems are posed in
+certain ways---and why specific formulations prevail in practice, even in the
+face of what might seem like normatively preferable alternatives. We conclude
+by discussing the implications of our findings, arguing that effective
+normative interventions will require attending to the practical work of problem
+formulation.
+";"Samir Passi|Solon Barocas";"";"http://arxiv.org/abs/1901.02547v1";"http://arxiv.org/pdf/1901.02547v1";"http://dx.doi.org/10.1145/3287560.3287567";"Conference on Fairness, Accountability, and Transparency (FAT* '19),
+  January 29-31, 2019, Atlanta, GA, USA";"";"10.1145/3287560.3287567";"cs.CY";"cs.CY";"problem formulation and fairness";"formulating data science problems is an uncertain and difficult process. it requires various forms of discretionary work to translate high-level objectives or strategic goals into tractable problems, necessitating, among other things, the identification of appropriate target variables and proxies. while these choices are rarely self-evident, normative assessments of data science projects often take them for granted, even though different translations can raise profoundly different ethical concerns. whether we consider a data science project fair often has as much to do with the formulation of the problem as any property of the resulting model. building on six months of ethnographic fieldwork with a corporate data science team---and channeling ideas from sociology and history of science, critical data studies, and early writing on knowledge discovery in databases---we describe the complex set of actors and activities involved in problem formulation. our research demonstrates that the specification and operationalization of the problem are always negotiated and elastic, and rarely worked out with explicit normative considerations in mind. in so doing, we show that careful accounts of everyday data science work can help us better understand how and why data science problems are posed in certain ways---and why specific formulations prevail in practice, even in the face of what might seem like normatively preferable alternatives. we conclude by discussing the implications of our findings, arguing that effective normative interventions will require attending to the practical work of problem formulation.";FALSE;TRUE;NA;134
+"5";"1901.06261v1";"2019-01-17 00:23:41";"2019-01-17 00:23:41";"NeuNetS: An Automated Synthesis Engine for Neural Network Design";"  Application of neural networks to a vast variety of practical applications is
+transforming the way AI is applied in practice. Pre-trained neural network
+models available through APIs or capability to custom train pre-built neural
+network architectures with customer data has made the consumption of AI by
+developers much simpler and resulted in broad adoption of these complex AI
+models. While prebuilt network models exist for certain scenarios, to try and
+meet the constraints that are unique to each application, AI teams need to
+think about developing custom neural network architectures that can meet the
+tradeoff between accuracy and memory footprint to achieve the tight constraints
+of their unique use-cases. However, only a small proportion of data science
+teams have the skills and experience needed to create a neural network from
+scratch, and the demand far exceeds the supply. In this paper, we present
+NeuNetS : An automated Neural Network Synthesis engine for custom neural
+network design that is available as part of IBM's AI OpenScale's product.
+NeuNetS is available for both Text and Image domains and can build neural
+networks for specific tasks in a fraction of the time it takes today with human
+effort, and with accuracy similar to that of human-designed AI models.
+";"Atin Sood|Benjamin Elder|Benjamin Herta|Chao Xue|Costas Bekas|A. Cristiano I. Malossi|Debashish Saha|Florian Scheidegger|Ganesh Venkataraman|Gegi Thomas|Giovanni Mariani|Hendrik Strobelt|Horst Samulowitz|Martin Wistuba|Matteo Manica|Mihir Choudhury|Rong Yan|Roxana Istrate|Ruchir Puri|Tejaswini Pedapati";"";"http://arxiv.org/abs/1901.06261v1";"http://arxiv.org/pdf/1901.06261v1";"";"14 pages, 12 figures. arXiv admin note: text overlap with
+  arXiv:1806.00250";"";"";"cs.LG";"cs.LG|cs.SE|stat.ML";"neunets: an automated synthesis engine for neural network design";"application of neural networks to a vast variety of practical applications is transforming the way ai is applied in practice. pre-trained neural network models available through apis or capability to custom train pre-built neural network architectures with customer data has made the consumption of ai by developers much simpler and resulted in broad adoption of these complex ai models. while prebuilt network models exist for certain scenarios, to try and meet the constraints that are unique to each application, ai teams need to think about developing custom neural network architectures that can meet the tradeoff between accuracy and memory footprint to achieve the tight constraints of their unique use-cases. however, only a small proportion of data science teams have the skills and experience needed to create a neural network from scratch, and the demand far exceeds the supply. in this paper, we present neunets : an automated neural network synthesis engine for custom neural network design that is available as part of ibm's ai openscale's product. neunets is available for both text and image domains and can build neural networks for specific tasks in a fraction of the time it takes today with human effort, and with accuracy similar to that of human-designed ai models.";FALSE;TRUE;NA;NA
+"6";"1902.08638v1";"2019-02-22 19:16:32";"2019-02-22 19:16:32";"MPP: Model Performance Predictor";"  Operations is a key challenge in the domain of machine learning pipeline
+deployments involving monitoring and management of real-time prediction
+quality. Typically, metrics like accuracy, RMSE etc., are used to track the
+performance of models in deployment. However, these metrics cannot be
+calculated in production due to the absence of labels. We propose using an ML
+algorithm, Model Performance Predictor (MPP), to track the performance of the
+models in deployment. We argue that an ensemble of such metrics can be used to
+create a score representing the prediction quality in production. This in turn
+facilitates formulation and customization of ML alerts, that can be escalated
+by an operations team to the data science team. Such a score automates
+monitoring and enables ML deployments at scale.
+";"Sindhu Ghanta|Sriram Subramanian|Lior Khermosh|Harshil Shah|Yakov Goldberg|Swaminathan Sundararaman|Drew Roselli|Nisha Talagala";"";"http://arxiv.org/abs/1902.08638v1";"http://arxiv.org/pdf/1902.08638v1";"";"submitted to OpML 2019";"";"";"cs.LG";"cs.LG|stat.ML";"mpp: model performance predictor";"operations is a key challenge in the domain of machine learning pipeline deployments involving monitoring and management of real-time prediction quality. typically, metrics like accuracy, rmse etc., are used to track the performance of models in deployment. however, these metrics cannot be calculated in production due to the absence of labels. we propose using an ml algorithm, model performance predictor (mpp), to track the performance of the models in deployment. we argue that an ensemble of such metrics can be used to create a score representing the prediction quality in production. this in turn facilitates formulation and customization of ml alerts, that can be escalated by an operations team to the data science team. such a score automates monitoring and enables ml deployments at scale.";FALSE;TRUE;NA;NA
+"7";"2001.06684v3";"2020-01-18 15:11:56";"2020-04-16 16:38:43";"How do Data Science Workers Collaborate? Roles, Workflows, and Tools";"  Today, the prominence of data science within organizations has given rise to
+teams of data science workers collaborating on extracting insights from data,
+as opposed to individual data scientists working alone. However, we still lack
+a deep understanding of how data science workers collaborate in practice. In
+this work, we conducted an online survey with 183 participants who work in
+various aspects of data science. We focused on their reported interactions with
+each other (e.g., managers with engineers) and with different tools (e.g.,
+Jupyter Notebook). We found that data science teams are extremely collaborative
+and work with a variety of stakeholders and tools during the six common steps
+of a data science workflow (e.g., clean data and train model). We also found
+that the collaborative practices workers employ, such as documentation, vary
+according to the kinds of tools they use. Based on these findings, we discuss
+design implications for supporting data science team collaborations and future
+research directions.
+";"Amy X. Zhang|Michael Muller|Dakuo Wang";"";"http://arxiv.org/abs/2001.06684v3";"http://arxiv.org/pdf/2001.06684v3";"";"CSCW'2020";"";"";"cs.HC";"cs.HC|cs.AI|cs.LG|cs.SE|stat.ML";"how do data science workers collaborate? roles, workflows, and tools";"today, the prominence of data science within organizations has given rise to teams of data science workers collaborating on extracting insights from data, as opposed to individual data scientists working alone. however, we still lack a deep understanding of how data science workers collaborate in practice. in this work, we conducted an online survey with 183 participants who work in various aspects of data science. we focused on their reported interactions with each other (e.g., managers with engineers) and with different tools (e.g., jupyter notebook). we found that data science teams are extremely collaborative and work with a variety of stakeholders and tools during the six common steps of a data science workflow (e.g., clean data and train model). we also found that the collaborative practices workers employ, such as documentation, vary according to the kinds of tools they use. based on these findings, we discuss design implications for supporting data science team collaborations and future research directions.";FALSE;TRUE;NA;NA
+"8";"2002.03389v1";"2020-02-09 15:50:50";"2020-02-09 15:50:50";"Trust in Data Science: Collaboration, Translation, and Accountability in
+  Corporate Data Science Projects";"  The trustworthiness of data science systems in applied and real-world
+settings emerges from the resolution of specific tensions through situated,
+pragmatic, and ongoing forms of work. Drawing on research in CSCW, critical
+data studies, and history and sociology of science, and six months of immersive
+ethnographic fieldwork with a corporate data science team, we describe four
+common tensions in applied data science work: (un)equivocal numbers,
+(counter)intuitive knowledge, (in)credible data, and (in)scrutable models. We
+show how organizational actors establish and re-negotiate trust under messy and
+uncertain analytic conditions through practices of skepticism, assessment, and
+credibility. Highlighting the collaborative and heterogeneous nature of
+real-world data science, we show how the management of trust in applied
+corporate data science settings depends not only on pre-processing and
+quantification, but also on negotiation and translation. We conclude by
+discussing the implications of our findings for data science research and
+practice, both within and beyond CSCW.
+";"Samir Passi|Steven J. Jackson";"";"http://arxiv.org/abs/2002.03389v1";"http://arxiv.org/pdf/2002.03389v1";"http://dx.doi.org/10.1145/3274405";"";"Proc. ACM Hum.-Comput. Interact. 2, CSCW, Article 136 (November
+  2018), 28 pages";"10.1145/3274405";"cs.CY";"cs.CY|cs.AI|cs.LG";"trust in data science: collaboration, translation, and accountability in corporate data science projects";"the trustworthiness of data science systems in applied and real-world settings emerges from the resolution of specific tensions through situated, pragmatic, and ongoing forms of work. drawing on research in cscw, critical data studies, and history and sociology of science, and six months of immersive ethnographic fieldwork with a corporate data science team, we describe four common tensions in applied data science work: (un)equivocal numbers, (counter)intuitive knowledge, (in)credible data, and (in)scrutable models. we show how organizational actors establish and re-negotiate trust under messy and uncertain analytic conditions through practices of skepticism, assessment, and credibility. highlighting the collaborative and heterogeneous nature of real-world data science, we show how the management of trust in applied corporate data science settings depends not only on pre-processing and quantification, but also on negotiation and translation. we conclude by discussing the implications of our findings for data science research and practice, both within and beyond cscw.";FALSE;TRUE;NA;130
+"9";"2103.05425v1";"2021-03-08 03:44:14";"2021-03-08 03:44:14";"Leveraging Data Scientists and Business Expectations During the COVID-19
+  Pandemic";"  The COVID-19 pandemic presented itself as a challenge for separate societal
+sectors. On the information technology (IT) standpoint, it does include the
+maintenance of the infrastructure required to hold collaborative activities
+that went to happen online; the implementation of projects in a scenario of
+uncertainty; and keep the software engineering and information security best
+practices in place. This article presents the context of a data science team
+organized as a skunk works group composed of professionals with experience in
+both the industry and academia, located in an IT department working with a team
+of seasoned data engineers. At the time the pandemic started, the relatively
+new data science team was positioning itself as a Center of Excellence in
+Advanced Analytics. With the pandemic, it had to keep up with the expectations
+from the stakeholders; manage current and upcoming data science projects within
+the methodology practiced in IT; and maintain a high level in the quality of
+service delivered. This article discusses how did the COVID-19 pandemic
+affected the team productivity and its practices as well as the lessons learned
+with it.
+";"Wellington Rodrigo Monteiro|Marcio Leandro do Prado|Gilberto Reynoso-Meza";"";"http://arxiv.org/abs/2103.05425v1";"http://arxiv.org/pdf/2103.05425v1";"";"";"";"";"cs.SE";"cs.SE";"leveraging data scientists and business expectations during the covid-19 pandemic";"the covid-19 pandemic presented itself as a challenge for separate societal sectors. on the information technology (it) standpoint, it does include the maintenance of the infrastructure required to hold collaborative activities that went to happen online; the implementation of projects in a scenario of uncertainty; and keep the software engineering and information security best practices in place. this article presents the context of a data science team organized as a skunk works group composed of professionals with experience in both the industry and academia, located in an it department working with a team of seasoned data engineers. at the time the pandemic started, the relatively new data science team was positioning itself as a center of excellence in advanced analytics. with the pandemic, it had to keep up with the expectations from the stakeholders; manage current and upcoming data science projects within the methodology practiced in it; and maintain a high level in the quality of service delivered. this article discusses how did the covid-19 pandemic affected the team productivity and its practices as well as the lessons learned with it.";FALSE;TRUE;NA;NA
+"10";"2104.12545v3";"2021-04-09 12:18:46";"2022-07-04 12:00:31";"Agile (data) science: a (draft) manifesto";"  Science has a data management problem, as well as a project management
+problem. While industrial-grade data science teams have embraced the agile
+mindset, and adopted or created all kind of tools to create reproducible
+workflows, academia-based science is still (mostly) mired in a mindset that is
+focused on a single final product (a paper), without focusing on incremental
+improvement, on any specific problem or customer, or, paying any attention
+reproducibility. In this report we argue towards the adoption of the agile
+mindset and agile data science tools in academia, to make a more responsible,
+and over all, reproducible science.
+";"Juan Julián Merelo-Guervós|Mario García-Valdez";"";"http://arxiv.org/abs/2104.12545v3";"http://arxiv.org/pdf/2104.12545v3";"";"";"";"";"cs.CY";"cs.CY|cs.SE|J.m; D.1.m";"agile (data) science: a (draft) manifesto";"science has a data management problem, as well as a project management problem. while industrial-grade data science teams have embraced the agile mindset, and adopted or created all kind of tools to create reproducible workflows, academia-based science is still (mostly) mired in a mindset that is focused on a single final product (a paper), without focusing on incremental improvement, on any specific problem or customer, or, paying any attention reproducibility. in this report we argue towards the adoption of the agile mindset and agile data science tools in academia, to make a more responsible, and over all, reproducible science.";FALSE;TRUE;NA;NA
+"11";"2108.08445v2";"2021-08-19 02:23:24";"2022-03-29 18:26:52";"Seven Principles for Rapid-Response Data Science: Lessons Learned from
+  Covid-19 Forecasting";"  In this article, we take a step back to distill seven principles out of our
+experience in the spring of 2020, when our 12-person rapid-response team used
+skills of data science and beyond to help distribute Covid PPE. This process
+included tapping into domain knowledge of epidemiology and medical logistics
+chains, curating a relevant data repository, developing models for short-term
+county-level death forecasting in the US, and building a website for sharing
+visualization (an automated AI machine). The principles are described in the
+context of working with Response4Life, a then-new nonprofit organization, to
+illustrate their necessity. Many of these principles overlap with those in
+standard data-science teams, but an emphasis is put on dealing with problems
+that require rapid response, often resembling agile software development.
+";"Bin Yu|Chandan Singh";"";"http://arxiv.org/abs/2108.08445v2";"http://arxiv.org/pdf/2108.08445v2";"";"4 pages, accepted in special issue of ""Statistical Science"" on
+  COVID-19 Response";"";"";"stat.AP";"stat.AP";"seven principles for rapid-response data science: lessons learned from covid-19 forecasting";"in this article, we take a step back to distill seven principles out of our experience in the spring of 2020, when our 12-person rapid-response team used skills of data science and beyond to help distribute covid ppe. this process included tapping into domain knowledge of epidemiology and medical logistics chains, curating a relevant data repository, developing models for short-term county-level death forecasting in the us, and building a website for sharing visualization (an automated ai machine). the principles are described in the context of working with response4life, a then-new nonprofit organization, to illustrate their necessity. many of these principles overlap with those in standard data-science teams, but an emphasis is put on dealing with problems that require rapid response, often resembling agile software development.";FALSE;TRUE;NA;NA
+"12";"2111.02705v1";"2021-11-04 09:29:16";"2021-11-04 09:29:16";"Benchmarking Multimodal AutoML for Tabular Data with Text Fields";"  We consider the use of automated supervised learning systems for data tables
+that not only contain numeric/categorical columns, but one or more text fields
+as well. Here we assemble 18 multimodal data tables that each contain some text
+fields and stem from a real business application. Our publicly-available
+benchmark enables researchers to comprehensively evaluate their own methods for
+supervised learning with numeric, categorical, and text features. To ensure
+that any single modeling strategy which performs well over all 18 datasets will
+serve as a practical foundation for multimodal text/tabular AutoML, the diverse
+datasets in our benchmark vary greatly in: sample size, problem types (a mix of
+classification and regression tasks), number of features (with the number of
+text columns ranging from 1 to 28 between datasets), as well as how the
+predictive signal is decomposed between text vs. numeric/categorical features
+(and predictive interactions thereof). Over this benchmark, we evaluate various
+straightforward pipelines to model such data, including standard two-stage
+approaches where NLP is used to featurize the text such that AutoML for tabular
+data can then be applied. Compared with human data science teams, the fully
+automated methodology that performed best on our benchmark (stack ensembling a
+multimodal Transformer with various tree models) also manages to rank 1st place
+when fit to the raw text/tabular data in two MachineHack prediction
+competitions and 2nd place (out of 2380 teams) in Kaggle's Mercari Price
+Suggestion Challenge.
+";"Xingjian Shi|Jonas Mueller|Nick Erickson|Mu Li|Alexander J. Smola";"";"http://arxiv.org/abs/2111.02705v1";"http://arxiv.org/pdf/2111.02705v1";"";"Proceedings of the Neural Information Processing Systems (NeurIPS)
+  Track on Datasets and Benchmarks 2021";"";"";"cs.LG";"cs.LG|cs.CL|stat.ML";"benchmarking multimodal automl for tabular data with text fields";"we consider the use of automated supervised learning systems for data tables that not only contain numeric/categorical columns, but one or more text fields as well. here we assemble 18 multimodal data tables that each contain some text fields and stem from a real business application. our publicly-available benchmark enables researchers to comprehensively evaluate their own methods for supervised learning with numeric, categorical, and text features. to ensure that any single modeling strategy which performs well over all 18 datasets will serve as a practical foundation for multimodal text/tabular automl, the diverse datasets in our benchmark vary greatly in: sample size, problem types (a mix of classification and regression tasks), number of features (with the number of text columns ranging from 1 to 28 between datasets), as well as how the predictive signal is decomposed between text vs. numeric/categorical features (and predictive interactions thereof). over this benchmark, we evaluate various straightforward pipelines to model such data, including standard two-stage approaches where nlp is used to featurize the text such that automl for tabular data can then be applied. compared with human data science teams, the fully automated methodology that performed best on our benchmark (stack ensembling a multimodal transformer with various tree models) also manages to rank 1st place when fit to the raw text/tabular data in two machinehack prediction competitions and 2nd place (out of 2380 teams) in kaggle's mercari price suggestion challenge.";FALSE;TRUE;NA;NA
+"13";"2203.12637v1";"2022-03-23 18:00:19";"2022-03-23 18:00:19";"Asynchronous Collaborative Learning Across Data Silos";"  Machine learning algorithms can perform well when trained on large datasets.
+While large organisations often have considerable data assets, it can be
+difficult for these assets to be unified in a manner that makes training
+possible. Data is very often 'siloed' in different parts of the organisation,
+with little to no access between silos. This fragmentation of data assets is
+especially prevalent in heavily regulated industries like financial services or
+healthcare. In this paper we propose a framework to enable asynchronous
+collaborative training of machine learning models across data silos. This
+allows data science teams to collaboratively train a machine learning model,
+without sharing data with one another. Our proposed approach enhances
+conventional federated learning techniques to make them suitable for this
+asynchronous training in this intra-organisation, cross-silo setting. We
+validate our proposed approach via extensive experiments.
+";"Tiffany Tuor|Joshua Lockhart|Daniele Magazzeni";"";"http://arxiv.org/abs/2203.12637v1";"http://arxiv.org/pdf/2203.12637v1";"";"Will appear in conference proceedings of ACM International Conference
+  on AI in Finance (ICAIF '21)";"";"";"cs.LG";"cs.LG";"asynchronous collaborative learning across data silos";"machine learning algorithms can perform well when trained on large datasets. while large organisations often have considerable data assets, it can be difficult for these assets to be unified in a manner that makes training possible. data is very often 'siloed' in different parts of the organisation, with little to no access between silos. this fragmentation of data assets is especially prevalent in heavily regulated industries like financial services or healthcare. in this paper we propose a framework to enable asynchronous collaborative training of machine learning models across data silos. this allows data science teams to collaboratively train a machine learning model, without sharing data with one another. our proposed approach enhances conventional federated learning techniques to make them suitable for this asynchronous training in this intra-organisation, cross-silo setting. we validate our proposed approach via extensive experiments.";FALSE;TRUE;NA;NA
+"14";"2210.03305v1";"2022-10-07 03:28:33";"2022-10-07 03:28:33";"How Do Data Science Workers Communicate Intermediate Results?";"  Data science workers increasingly collaborate on large-scale projects before
+communicating insights to a broader audience in the form of visualization.
+While prior work has modeled how data science teams, oftentimes with distinct
+roles and work processes, communicate knowledge to outside stakeholders, we
+have little knowledge of how data science workers communicate intermediately
+before delivering the final products. In this work, we contribute a nuanced
+description of the intermediate communication process within data science
+teams. By analyzing interview data with 8 self-identified data science workers,
+we characterized the data science intermediate communication process with four
+factors, including the types of audience, communication goals, shared
+artifacts, and mode of communication. We also identified overarching challenges
+in the current communication process. We also discussed design implications
+that might inform better tools that facilitate intermediate communication
+within data science teams.
+";"Rock Yuren Pang|Ruotong Wang|Joely Nelson|Leilani Battle";"";"http://arxiv.org/abs/2210.03305v1";"http://arxiv.org/pdf/2210.03305v1";"";"This paper was accepted for presentation as part of the eighth
+  Symposium on Visualization in Data Science (VDS) at ACM KDD 2022 as well as
+  IEEE VIS 2022. http://www.visualdatascience.org/2022/index.html";"";"";"cs.HC";"cs.HC";"how do data science workers communicate intermediate results?";"data science workers increasingly collaborate on large-scale projects before communicating insights to a broader audience in the form of visualization. while prior work has modeled how data science teams, oftentimes with distinct roles and work processes, communicate knowledge to outside stakeholders, we have little knowledge of how data science workers communicate intermediately before delivering the final products. in this work, we contribute a nuanced description of the intermediate communication process within data science teams. by analyzing interview data with 8 self-identified data science workers, we characterized the data science intermediate communication process with four factors, including the types of audience, communication goals, shared artifacts, and mode of communication. we also identified overarching challenges in the current communication process. we also discussed design implications that might inform better tools that facilitate intermediate communication within data science teams.";FALSE;TRUE;NA;NA
+"15";"2211.12507v3";"2022-11-22 03:23:40";"2023-06-05 13:22:12";"OpenFE: Automated Feature Generation with Expert-level Performance";"  The goal of automated feature generation is to liberate machine learning
+experts from the laborious task of manual feature generation, which is crucial
+for improving the learning performance of tabular data. The major challenge in
+automated feature generation is to efficiently and accurately identify
+effective features from a vast pool of candidate features. In this paper, we
+present OpenFE, an automated feature generation tool that provides competitive
+results against machine learning experts. OpenFE achieves high efficiency and
+accuracy with two components: 1) a novel feature boosting method for accurately
+evaluating the incremental performance of candidate features and 2) a two-stage
+pruning algorithm that performs feature pruning in a coarse-to-fine manner.
+Extensive experiments on ten benchmark datasets show that OpenFE outperforms
+existing baseline methods by a large margin. We further evaluate OpenFE in two
+Kaggle competitions with thousands of data science teams participating. In the
+two competitions, features generated by OpenFE with a simple baseline model can
+beat 99.3% and 99.6% data science teams respectively. In addition to the
+empirical results, we provide a theoretical perspective to show that feature
+generation can be beneficial in a simple yet representative setting. The code
+is available at https://github.com/ZhangTP1996/OpenFE.
+";"Tianping Zhang|Zheyu Zhang|Zhiyuan Fan|Haoyan Luo|Fengyuan Liu|Qian Liu|Wei Cao|Jian Li";"";"http://arxiv.org/abs/2211.12507v3";"http://arxiv.org/pdf/2211.12507v3";"";"22 pages, 3 figures, accepted by ICML2023";"";"";"cs.LG";"cs.LG";"openfe: automated feature generation with expert-level performance";"the goal of automated feature generation is to liberate machine learning experts from the laborious task of manual feature generation, which is crucial for improving the learning performance of tabular data. the major challenge in automated feature generation is to efficiently and accurately identify effective features from a vast pool of candidate features. in this paper, we present openfe, an automated feature generation tool that provides competitive results against machine learning experts. openfe achieves high efficiency and accuracy with two components: 1) a novel feature boosting method for accurately evaluating the incremental performance of candidate features and 2) a two-stage pruning algorithm that performs feature pruning in a coarse-to-fine manner. extensive experiments on ten benchmark datasets show that openfe outperforms existing baseline methods by a large margin. we further evaluate openfe in two kaggle competitions with thousands of data science teams participating. in the two competitions, features generated by openfe with a simple baseline model can beat 99.3% and 99.6% data science teams respectively. in addition to the empirical results, we provide a theoretical perspective to show that feature generation can be beneficial in a simple yet representative setting. the code is available at https://github.com/zhangtp1996/openfe.";FALSE;TRUE;NA;NA
+"16";"2308.13228v1";"2023-08-25 08:00:09";"2023-08-25 08:00:09";"Meaningful XAI Based on User-Centric Design Methodology";"  This report first takes stock of XAI-related requirements appearing in
+various EU directives, regulations, guidelines, and CJEU case law. This
+analysis of existing requirements will permit us to have a clearer vision of
+the purposes, the ``why'', of XAI, which we separate into five categories:
+contestability, empowerment/redressing information asymmetries, control over
+system performance, evaluation of algorithmic decisions, and public
+administration transparency. The analysis of legal requirements also permits us
+to create four categories of recipients for explainability: data science teams;
+human operators of the system; persons affected by algorithmic decisions, and
+regulators/judges/auditors. Lastly, we identify four main operational contexts
+for explainability: XAI for the upstream design and testing phase; XAI for
+human-on-the-loop control; XAI for human-in-the-loop control; and XAI for
+ex-post challenges and investigations.Second, we will present user-centered
+design methodology, which takes the purposes, the recipients and the
+operational context into account in order to develop optimal XAI
+solutions.Third, we will suggest a methodology to permit suppliers and users of
+high-risk AI applications to propose local XAI solutions that are effective in
+the sense of being ``meaningful'', for example, useful in light of the
+operational, safety and fundamental rights contexts. The process used to
+develop these ``meaningful'' XAI solutions will be based on user-centric design
+principles examined in the second part.Fourth, we will suggest that the
+European Commission issue guidelines to provide a harmonised approach to
+defining ``meaningful'' explanations based on the purposes, audiences and
+operational contexts of AI systems. These guidelines would apply to the AI Act,
+but also to the other EU texts requiring explanations for algorithmic systems
+and results.
+";"Winston Maxwell|Bruno Dumas";"SES, IP Paris, I3 SES, NOS|";"http://arxiv.org/abs/2308.13228v1";"http://arxiv.org/pdf/2308.13228v1";"";"";"";"";"cs.HC";"cs.HC|cs.CY";"meaningful xai based on user-centric design methodology";"this report first takes stock of xai-related requirements appearing in various eu directives, regulations, guidelines, and cjeu case law. this analysis of existing requirements will permit us to have a clearer vision of the purposes, the ``why'', of xai, which we separate into five categories: contestability, empowerment/redressing information asymmetries, control over system performance, evaluation of algorithmic decisions, and public administration transparency. the analysis of legal requirements also permits us to create four categories of recipients for explainability: data science teams; human operators of the system; persons affected by algorithmic decisions, and regulators/judges/auditors. lastly, we identify four main operational contexts for explainability: xai for the upstream design and testing phase; xai for human-on-the-loop control; xai for human-in-the-loop control; and xai for ex-post challenges and investigations.second, we will present user-centered design methodology, which takes the purposes, the recipients and the operational context into account in order to develop optimal xai solutions.third, we will suggest a methodology to permit suppliers and users of high-risk ai applications to propose local xai solutions that are effective in the sense of being ``meaningful'', for example, useful in light of the operational, safety and fundamental rights contexts. the process used to develop these ``meaningful'' xai solutions will be based on user-centric design principles examined in the second part.fourth, we will suggest that the european commission issue guidelines to provide a harmonised approach to defining ``meaningful'' explanations based on the purposes, audiences and operational contexts of ai systems. these guidelines would apply to the ai act, but also to the other eu texts requiring explanations for algorithmic systems and results.";FALSE;TRUE;NA;NA
+"17";"2312.07721v1";"2023-12-12 20:28:11";"2023-12-12 20:28:11";"Saturn Platform: Foundation Model Operations and Generative AI for
+  Financial Services";"  Saturn is an innovative platform that assists Foundation Model (FM) building
+and its integration with IT operations (Ops). It is custom-made to meet the
+requirements of data scientists, enabling them to effectively create and
+implement FMs while enhancing collaboration within their technical domain. By
+offering a wide range of tools and features, Saturn streamlines and automates
+different stages of FM development, making it an invaluable asset for data
+science teams. This white paper introduces prospective applications of
+generative AI models derived from FMs in the financial sector.
+";"Antonio J. G. Busson|Rennan Gaio|Rafael H. Rocha|Francisco Evangelista|Bruno Rizzi|Luan Carvalho|Rafael Miceli|Marcos Rabaioli|David Favaro";"";"http://arxiv.org/abs/2312.07721v1";"http://arxiv.org/pdf/2312.07721v1";"http://dx.doi.org/10.5753/webmedia_estendido.2023.234354";"";"";"10.5753/webmedia_estendido.2023.234354";"cs.AI";"cs.AI";"saturn platform: foundation model operations and generative ai for financial services";"saturn is an innovative platform that assists foundation model (fm) building and its integration with it operations (ops). it is custom-made to meet the requirements of data scientists, enabling them to effectively create and implement fms while enhancing collaboration within their technical domain. by offering a wide range of tools and features, saturn streamlines and automates different stages of fm development, making it an invaluable asset for data science teams. this white paper introduces prospective applications of generative ai models derived from fms in the financial sector.";FALSE;TRUE;1;0
+"18";"2402.13437v1";"2024-02-21 00:11:13";"2024-02-21 00:11:13";"Sketching AI Concepts with Capabilities and Examples: AI Innovation in
+  the Intensive Care Unit";"  Advances in artificial intelligence (AI) have enabled unprecedented
+capabilities, yet innovation teams struggle when envisioning AI concepts. Data
+science teams think of innovations users do not want, while domain experts
+think of innovations that cannot be built. A lack of effective ideation seems
+to be a breakdown point. How might multidisciplinary teams identify buildable
+and desirable use cases? This paper presents a first hand account of ideating
+AI concepts to improve critical care medicine. As a team of data scientists,
+clinicians, and HCI researchers, we conducted a series of design workshops to
+explore more effective approaches to AI concept ideation and problem
+formulation. We detail our process, the challenges we encountered, and
+practices and artifacts that proved effective. We discuss the research
+implications for improved collaboration and stakeholder engagement, and discuss
+the role HCI might play in reducing the high failure rate experienced in AI
+innovation.
+";"Nur Yildirim|Susanna Zlotnikov|Deniz Sayar|Jeremy M. Kahn|Leigh A. Bukowski|Sher Shah Amin|Kathryn A. Riman|Billie S. Davis|John S. Minturn|Andrew J. King|Dan Ricketts|Lu Tang|Venkatesh Sivaraman|Adam Perer|Sarah M. Preum|James McCann|John Zimmerman";"";"http://arxiv.org/abs/2402.13437v1";"http://arxiv.org/pdf/2402.13437v1";"http://dx.doi.org/10.1145/3613904.3641896";"to appear at CHI 2024";"";"10.1145/3613904.3641896";"cs.HC";"cs.HC";"sketching ai concepts with capabilities and examples: ai innovation in the intensive care unit";"advances in artificial intelligence (ai) have enabled unprecedented capabilities, yet innovation teams struggle when envisioning ai concepts. data science teams think of innovations users do not want, while domain experts think of innovations that cannot be built. a lack of effective ideation seems to be a breakdown point. how might multidisciplinary teams identify buildable and desirable use cases? this paper presents a first hand account of ideating ai concepts to improve critical care medicine. as a team of data scientists, clinicians, and hci researchers, we conducted a series of design workshops to explore more effective approaches to ai concept ideation and problem formulation. we detail our process, the challenges we encountered, and practices and artifacts that proved effective. we discuss the research implications for improved collaboration and stakeholder engagement, and discuss the role hci might play in reducing the high failure rate experienced in ai innovation.";FALSE;TRUE;NA;3
+"19";"2403.07911v2";"2024-02-27 03:33:40";"2024-03-14 18:37:53";"Standing on FURM ground -- A framework for evaluating Fair, Useful, and
+  Reliable AI Models in healthcare systems";"  The impact of using artificial intelligence (AI) to guide patient care or
+operational processes is an interplay of the AI model's output, the
+decision-making protocol based on that output, and the capacity of the
+stakeholders involved to take the necessary subsequent action. Estimating the
+effects of this interplay before deployment, and studying it in real time
+afterwards, are essential to bridge the chasm between AI model development and
+achievable benefit. To accomplish this, the Data Science team at Stanford
+Health Care has developed a Testing and Evaluation (T&E) mechanism to identify
+fair, useful and reliable AI models (FURM) by conducting an ethical review to
+identify potential value mismatches, simulations to estimate usefulness,
+financial projections to assess sustainability, as well as analyses to
+determine IT feasibility, design a deployment strategy, and recommend a
+prospective monitoring and evaluation plan. We report on FURM assessments done
+to evaluate six AI guided solutions for potential adoption, spanning clinical
+and operational settings, each with the potential to impact from several dozen
+to tens of thousands of patients each year. We describe the assessment process,
+summarize the six assessments, and share our framework to enable others to
+conduct similar assessments. Of the six solutions we assessed, two have moved
+into a planning and implementation phase. Our novel contributions - usefulness
+estimates by simulation, financial projections to quantify sustainability, and
+a process to do ethical assessments - as well as their underlying methods and
+open source tools, are available for other healthcare systems to conduct
+actionable evaluations of candidate AI solutions.
+";"Alison Callahan|Duncan McElfresh|Juan M. Banda|Gabrielle Bunney|Danton Char|Jonathan Chen|Conor K. Corbin|Debadutta Dash|Norman L. Downing|Sneha S. Jain|Nikesh Kotecha|Jonathan Masterson|Michelle M. Mello|Keith Morse|Srikar Nallan|Abby Pandya|Anurang Revri|Aditya Sharma|Christopher Sharp|Rahul Thapa|Michael Wornow|Alaa Youssef|Michael A. Pfeffer|Nigam H. Shah";"";"http://arxiv.org/abs/2403.07911v2";"http://arxiv.org/pdf/2403.07911v2";"";"";"";"";"cs.CY";"cs.CY|cs.AI";"standing on furm ground -- a framework for evaluating fair, useful, and reliable ai models in healthcare systems";"the impact of using artificial intelligence (ai) to guide patient care or operational processes is an interplay of the ai model's output, the decision-making protocol based on that output, and the capacity of the stakeholders involved to take the necessary subsequent action. estimating the effects of this interplay before deployment, and studying it in real time afterwards, are essential to bridge the chasm between ai model development and achievable benefit. to accomplish this, the data science team at stanford health care has developed a testing and evaluation (t&e) mechanism to identify fair, useful and reliable ai models (furm) by conducting an ethical review to identify potential value mismatches, simulations to estimate usefulness, financial projections to assess sustainability, as well as analyses to determine it feasibility, design a deployment strategy, and recommend a prospective monitoring and evaluation plan. we report on furm assessments done to evaluate six ai guided solutions for potential adoption, spanning clinical and operational settings, each with the potential to impact from several dozen to tens of thousands of patients each year. we describe the assessment process, summarize the six assessments, and share our framework to enable others to conduct similar assessments. of the six solutions we assessed, two have moved into a planning and implementation phase. our novel contributions - usefulness estimates by simulation, financial projections to quantify sustainability, and a process to do ethical assessments - as well as their underlying methods and open source tools, are available for other healthcare systems to conduct actionable evaluations of candidate ai solutions.";FALSE;TRUE;NA;NA
+"20";"2403.10438v1";"2024-03-15 16:20:51";"2024-03-15 16:20:51";"Data Ethics Emergency Drill: A Toolbox for Discussing Responsible AI for
+  Industry Teams";"  Researchers urge technology practitioners such as data scientists to consider
+the impacts and ethical implications of algorithmic decisions. However, unlike
+programming, statistics, and data management, discussion of ethical
+implications is rarely included in standard data science training. To begin to
+address this gap, we designed and tested a toolbox called the data ethics
+emergency drill (DEED) to help data science teams discuss and reflect on the
+ethical implications of their work. The DEED is a roleplay of a fictional
+ethical emergency scenario that is contextually situated in the team's specific
+workplace and applications. This paper outlines the DEED toolbox and describes
+three studies carried out with two different data science teams that
+iteratively shaped its design. Our findings show that practitioners can apply
+lessons learnt from the roleplay to real-life situations, and how the DEED
+opened up conversations around ethics and values.
+";"Vanessa Aisyahsari Hanschke|Dylan Rees|Merve Alanyali|David Hopkinson|Paul Marshall";"";"http://arxiv.org/abs/2403.10438v1";"http://arxiv.org/pdf/2403.10438v1";"";"accepted to CHI 2024";"";"";"cs.HC";"cs.HC|cs.AI|cs.CY";"data ethics emergency drill: a toolbox for discussing responsible ai for industry teams";"researchers urge technology practitioners such as data scientists to consider the impacts and ethical implications of algorithmic decisions. however, unlike programming, statistics, and data management, discussion of ethical implications is rarely included in standard data science training. to begin to address this gap, we designed and tested a toolbox called the data ethics emergency drill (deed) to help data science teams discuss and reflect on the ethical implications of their work. the deed is a roleplay of a fictional ethical emergency scenario that is contextually situated in the team's specific workplace and applications. this paper outlines the deed toolbox and describes three studies carried out with two different data science teams that iteratively shaped its design. our findings show that practitioners can apply lessons learnt from the roleplay to real-life situations, and how the deed opened up conversations around ethics and values.";FALSE;TRUE;NA;NA
+"21";"2404.17271v1";"2024-04-26 09:18:54";"2024-04-26 09:18:54";"To democratize research with sensitive data, we should make synthetic
+  data more accessible";"  For over 30 years, synthetic data has been heralded as a promising solution
+to make sensitive datasets accessible. However, despite much research effort
+and several high-profile use-cases, the widespread adoption of synthetic data
+as a tool for open, accessible, reproducible research with sensitive data is
+still a distant dream. In this opinion, Erik-Jan van Kesteren, head of the
+ODISSEI Social Data Science team, argues that in order to progress towards
+widespread adoption of synthetic data as a privacy enhancing technology, the
+data science research community should shift focus away from developing better
+synthesis methods: instead, it should develop accessible tools, educate peers,
+and publish small-scale case studies.
+";"Erik-Jan van Kesteren";"";"http://arxiv.org/abs/2404.17271v1";"http://arxiv.org/pdf/2404.17271v1";"http://dx.doi.org/10.1016/j.patter.2024.101049";"4 pages, 2 figures";"";"10.1016/j.patter.2024.101049";"stat.OT";"stat.OT|cs.CY";"to democratize research with sensitive data, we should make synthetic data more accessible";"for over 30 years, synthetic data has been heralded as a promising solution to make sensitive datasets accessible. however, despite much research effort and several high-profile use-cases, the widespread adoption of synthetic data as a tool for open, accessible, reproducible research with sensitive data is still a distant dream. in this opinion, erik-jan van kesteren, head of the odissei social data science team, argues that in order to progress towards widespread adoption of synthetic data as a privacy enhancing technology, the data science research community should shift focus away from developing better synthesis methods: instead, it should develop accessible tools, educate peers, and publish small-scale case studies.";FALSE;TRUE;2;0
+"22";"2407.11824v1";"2024-07-16 15:11:54";"2024-07-16 15:11:54";"The Future of Data Science Education";"  The definition of Data Science is a hotly debated topic. For many, the
+definition is a simple shortcut to Artificial Intelligence or Machine Learning.
+However, there is far more depth and nuance to the field of Data Science than a
+simple shortcut can provide. The School of Data Science at the University of
+Virginia has developed a novel model for the definition of Data Science. This
+model is based on identifying a unified understanding of the data work done
+across all areas of Data Science. It represents a generational leap forward in
+how we understand and teach Data Science. In this paper we will present the
+core features of the model and explain how it unifies various concepts going
+far beyond the analytics component of AI. From this foundation we will present
+our Undergraduate Major curriculum in Data Science and demonstrate how it
+prepares students to be well-rounded Data Science team members and leaders. The
+paper will conclude with an in-depth overview of the Foundations of Data
+Science course designed to introduce students to the field while also
+implementing proven STEM oriented pedagogical methods. These include, for
+example, specifications grading, active learning lectures, guest lectures from
+industry experts and weekly gamification labs.
+";"Brian Wright|Peter Alonzi|Ali Riveria";"";"http://arxiv.org/abs/2407.11824v1";"http://arxiv.org/pdf/2407.11824v1";"";"12 pages, 5 figures, publish at the 53rd Annual Southeast Decision
+  Science Institute 2024, won best paper for Innovation track";"";"";"stat.OT";"stat.OT|cs.AI";"the future of data science education";"the definition of data science is a hotly debated topic. for many, the definition is a simple shortcut to artificial intelligence or machine learning. however, there is far more depth and nuance to the field of data science than a simple shortcut can provide. the school of data science at the university of virginia has developed a novel model for the definition of data science. this model is based on identifying a unified understanding of the data work done across all areas of data science. it represents a generational leap forward in how we understand and teach data science. in this paper we will present the core features of the model and explain how it unifies various concepts going far beyond the analytics component of ai. from this foundation we will present our undergraduate major curriculum in data science and demonstrate how it prepares students to be well-rounded data science team members and leaders. the paper will conclude with an in-depth overview of the foundations of data science course designed to introduce students to the field while also implementing proven stem oriented pedagogical methods. these include, for example, specifications grading, active learning lectures, guest lectures from industry experts and weekly gamification labs.";FALSE;TRUE;0;NA

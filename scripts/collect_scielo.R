@@ -4,11 +4,10 @@ library(stringr)
 library(purrr)
 
 # 🔹 Lista de meses em diferentes idiomas para remoção do título
-meses_lista <- c("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez",
-                 "January", "February", "March", "April", "May", "June", "July", "August", "September",
-                 "October", "November", "December",
-                 "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
-                 "Septiembre", "Octubre", "Noviembre", "Diciembre")
+meses_lista <- c(
+  "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez",
+  "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
+  "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
 
 # 🔹 Função para buscar artigos no SciELO
 buscar_scielo <- function(query, num_paginas = 8) {
@@ -122,5 +121,7 @@ buscar_scielo <- function(query, num_paginas = 8) {
 
 # 🔹 Rodar busca no SciELO
 query <- '"data science team" OR "data-science" OR "data science"'
+
+query <- '"origin-destination matrix"'
 
 df_scielo <- buscar_scielo(query, num_paginas = 3)

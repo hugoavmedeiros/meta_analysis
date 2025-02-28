@@ -122,6 +122,7 @@ buscar_scielo <- function(query, num_paginas = 8) {
 # 🔹 Rodar busca no SciELO
 query <- '"data science team" OR "data-science" OR "data science"'
 
-query <- '"origin-destination matrix"'
+query <- '"Gestão do Investimento Público" OR "Gestão dos Investimentos Públicos" OR "Public Investment Management"'
 
-df_scielo <- buscar_scielo(query, num_paginas = 3)
+df_scielo <- buscar_scielo(query, num_paginas = 10)
+

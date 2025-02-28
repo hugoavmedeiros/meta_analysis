@@ -47,13 +47,18 @@ buscar_citacoes_crossref <- function(link_doi) {
   return(NA)
 }
 
+# termos_busca <- c(
+#   "data science team",
+#   "data-science team",
+#   "data science teams",
+#   "teams in data science",
+#   "time de ciência de dados",
+#   "data science roles")
+
 termos_busca <- c(
-  "data science team",
-  "data-science team",
-  "data science teams",
-  "teams in data science",
-  "time de ciência de dados",
-  "data science roles")
+  "Gestão do Investimento Público",
+  "Gestão dos Investimentos Públicos",
+  "Public Investment Management")
 
 query <- paste0("ti:\"", termos_busca, "\" OR abs:\"", termos_busca, "\"", collapse = " OR ")
 

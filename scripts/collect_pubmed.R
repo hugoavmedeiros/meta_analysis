@@ -7,14 +7,21 @@ library(purrr)
 library(stringr)
 library(xml2)
 
+# termos_busca <- c(
+#   "data science team",
+#   "data-science team",
+#   "data science teams",
+#   "teams in data science",
+#   "time de ciência de dados",
+#   "data science roles"
+# )
+
 termos_busca <- c(
-  "data science team",
-  "data-science team",
-  "data science teams",
-  "teams in data science",
-  "time de ciência de dados",
-  "data science roles"
-)
+  "Gestão do Investimento Público",
+  "Gestao do Investimento Publico",
+  "Gestão dos Investimentos Públicos",
+  "Gestao dos Investimentos Publicos",
+  "Public Investment Management")
 
 # Criar query automaticamente para incluir todos os termos no título e resumo
 query <- paste0("\"", termos_busca, "\"[Title/Abstract]", collapse = " OR ")

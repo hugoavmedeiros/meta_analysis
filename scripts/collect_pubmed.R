@@ -63,7 +63,7 @@ artigos <- xml_find_all(xml_data, ".//PubmedArticle")
 #   )
 # })
 
-buscar_citacoes_pmc <- function(pmid) {
+buscar_citacoes_pubmed_pmc <- function(pmid) {
   if (is.na(pmid) || pmid == "") return(NA)
 
   url <- paste0("https://api.ncbi.nlm.nih.gov/lit/ctxp/v1/pmc/?format=csl&id=", pmid)
@@ -78,7 +78,7 @@ buscar_citacoes_pmc <- function(pmid) {
 }
 
 # 🔹 Função para buscar citações no CrossRef (via DOI)
-buscar_citacoes_crossref <- function(doi) {
+buscar_citacoes_pubmed_crossref <- function(doi) {
   if (is.na(doi) || doi == "") return(NA)
 
   doi <- gsub("https://doi.org/", "", doi)  # Remove prefixo se existir
@@ -114,8 +114,8 @@ df_pubmed <- map_df(artigos, function(artigo) {
     publication_type = paste(xml_text(xml_find_all(artigo, ".//PublicationType")), collapse = ", "),
 
     # 🔹 Buscar número de citações no PubMed Central (PMC) e CrossRef
-    citations_pmc = buscar_citacoes_pmc(pmid),
-    citations_crossref = buscar_citacoes_crossref(doi)
+    citations_pmc = buscar_citacoes_pubmed_pmc(pmid),
+    citations_crossref = buscar_citacoes_pubmed_crossref(doi)
   )
 })
 

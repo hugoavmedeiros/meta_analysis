@@ -18,10 +18,9 @@ library(xml2)
 
 termos_busca <- c(
   "Gestão do Investimento Público",
-  "Gestao do Investimento Publico",
-  "Gestão dos Investimentos Públicos",
-  "Gestao dos Investimentos Publicos",
-  "Public Investment Management")
+  "Gestión de la inversión pública",
+  "Public investment management"
+)
 
 # Criar query automaticamente para incluir todos os termos no título e resumo
 query <- paste0("\"", termos_busca, "\"[Title/Abstract]", collapse = " OR ")

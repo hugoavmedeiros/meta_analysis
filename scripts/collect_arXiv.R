@@ -47,6 +47,7 @@ buscar_citacoes_arXiv_crossref <- function(link_doi) {
   return(NA)
 }
 
+<<<<<<< HEAD
 # termos_busca <- c(
 #   "data science team",
 #   "data-science team",
@@ -59,6 +60,12 @@ termos_busca <- c(
   "Gestão do Investimento Público",
   "Gestão dos Investimentos Públicos",
   "Public Investment Management")
+=======
+termos_busca <- c(
+  "Gestão do Investimento Público",
+  "Gestión de la inversión pública",
+  "Public investment management")
+>>>>>>> f5a71ec1411fb5a60919a7320ec5337742e574f6
 
 query <- paste0("ti:\"", termos_busca, "\" OR abs:\"", termos_busca, "\"", collapse = " OR ")
 
@@ -86,6 +93,7 @@ df_arxiv %>% write.csv2(
 # query <- paste0("ti:\"", termos_busca, "\" OR abs:\"", termos_busca, "\"", collapse = " OR ")
 #
 # df_arxiv <- arxiv_search(query = query, limit = 200)
+
 #
 # df_arxiv <- df_arxiv %>%
 #   mutate(

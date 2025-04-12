@@ -120,8 +120,11 @@ buscar_scielo <- function(query, num_paginas = 8) {
 }
 
 # 🔹 Rodar busca no SciELO
-query <- '"data science team" OR "data-science" OR "data science"'
+query <- '"gestão do investimento público" OR "Gestión de la inversión pública" OR "Public investment management"'
 
-query <- '"origin-destination matrix"'
+#query <- '"origin-destination matrix"'
 
 df_scielo <- buscar_scielo(query, num_paginas = 3)
+
+df_scielo %>% writexl::write_xlsx('../../strategicProjects/REDIPPE/paper/scielo_all.xlsx')
+

@@ -8,12 +8,9 @@ library(stringr)
 library(xml2)
 
 termos_busca <- c(
-  "data science team",
-  "data-science team",
-  "data science teams",
-  "teams in data science",
-  "time de ciência de dados",
-  "data science roles"
+  "Gestão do Investimento Público",
+  "Gestión de la inversión pública",
+  "Public investment management"
 )
 
 # Criar query automaticamente para incluir todos os termos no título e resumo
